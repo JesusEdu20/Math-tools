@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <main>
+        <section class="interest-section">
+
+            <div class="interest-form__container interest-section-box">
+                <!-- <div id="background-filter-blur"></div> -->
+                <!-- <h1>Calculadora de interés compuesto</h1> -->
+                <form class="interest-form">
+            
+
+                    <!-- Tipo de Moneda -->
+                    <div class="type-coin-container input-container">
+                        <label for="type-coin__select" class="type-coin__label">Moneda</label>
+
+                        <select id="type-coin__select"  class="interest-form__input">
+                            <option>Dólar</option>
+                            <option>Euro</option>
+                            <option>Bolivares</option>
+                        </select>
+                        
+                    </div>    
+                    
+                    <div class="initialAmount-container input-container">
+                        <!--Capital Inicial  -->
+                    
+                        <label for="initialAmount__input">Capital Inicial</label>
+                        <div id="initialAmount-input-container">
+                            <input type="number" id="initialAmount__input" class="interest-form__input" placeholder="1,000">
+                        </div>
+                    </div>
+
+                    <div class="compound-interest-container input-container">
+                        <!-- Tasa de Interes-->
+                        <label for="compound-interest__input"> Tasa de Interes </label>
+                        <input type="number" id="compound-interest__input" name="compound-interest" class="interest-form__input" placeholder="5%">
+
+                        <select id="compound-interest__select" class="interest-form__input">
+                            <option>Anual</option>
+                            <option>Mensual</option>
+                        </select>
+                    </div>  
+
+
+                    <div class="capitalization-container input-container">
+                        <!-- Capitalización -->
+                        <label for="capitalization__select">Capitalización</label>
+                        <select id="capitalization__select" class="interest-form__input">
+                            <option value="1-año">Anual</option>
+                            <option value="1-mes">Mensual</option>
+                            <option value="1-dia">Diario</option>
+                            <option value="6-mes">Semestral</option>
+                            <option value="3-mes">Trimestral</option>
+                            <option value="4-mes">Cuatrimestre</option>
+                            <option value="2-mes">Bimensual</option>
+                        </select>
+                    </div>    
+
+
+                    <div class="period-contaiener input-container">
+                        <!-- Periodo -->
+                        <label for="period__input">Periodo</label>
+                        <input type="number" id="period__input" class="interest-form__input" placeholder="3">
+                        <select id="period__select" class="interest-form__input">
+                            <option value="año">Años</option>
+                            <option value="mes">Meses</option>
+                        </select>
+                    </div>
+
+                    <!-- BTN -->
+                    
+                    <div class="btn-container">
+                        <button id="calc__btn" type="button">Calcular</button>
+                        <button id="restart__btn" type="button">Reiniciar</button>
+                    </div>
+
+
+                    <!-- Outputs -->
+
+                    <div class="outputs-container">
+
+                        <label for="final-amount">Valor futuro</label>
+                        <div class="output">
+                        
+                            <input type="number" class="outputs-final-amount__input interest-form__input" id="final-amount">
+                        </div>
+                        
+
+                        <label for="final-interest-amount">Cantidad de Intereses</label>
+                        <div class="output">
+                            
+                            <input type="number" class="outputs-interest-amount__input interest-form__input" id="final-interest-amount">
+                        </div> 
+                    </div>
+
+                    
+                </form>
+            </div>   
+            
+
+            <div id="info-compund-interest-container" class="interest-section-box">
+
+                <div  id="info-compund-interest-card">
+        
+                    <div>
+                        <p> Elementos clave del interés compuesto son:</p>
+                            <ol>
+                                <li>Capital inicial: La cantidad de dinero con la que comienzas.</li>
+                                <li>Tasa de interés: El porcentaje que ganas sobre tu capital.</li>
+                                <li>Frecuencia de capitalización: ¿Cada cuánto se calculan los intereses? Puede ser mensual, trimestral, anual, etc. </li>
+        
+                                <Li>Periodo de tiempo: El tiempo durante el cual tus ganancias se acumularán.</Li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div id="converter-unit-of-time">
+                <div class="interest-section-box" id="unit-converter">
+                    <form>
+                        <div> 
+                            <input type="number" placeholder="1" id="unit-converter-introduce-value__input">
+                            <select id="unit-converter-introduce-value__select">
+                                <option>Dia</option>
+                               
+                                
+                                <option>Mes</option>
+                                <option>Año</option>
+                            </select>
+                        </div>
+                        <span>=</span>
+                        <div>
+                            <input type="number" placeholder="24" id="unit-converter-output__input">
+                            <select id="unit-converter-output__select">
+                                <option>Dia</option>
+                               
+                              
+                                <option selected>Mes</option>
+                                <option>Año</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="interest-section-box" id="unit-converter-title-container">
+                    <div id="unit-converter-title-card">
+                        <p>Convertir unidades de tiempo</p>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            
+
+        </section>
+
+
+      
+
+        
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
+
+

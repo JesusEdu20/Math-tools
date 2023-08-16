@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(./Untitled-7-06.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+
+/* #background-filter-blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(100px);
+    z-index: -1;
+    background-color:  rgba(224, 218, 218, 0.836) ;
+    
+
+} */
+
+
+
+.interest-section{
+
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: 400px minmax(600px);
+    
+    align-items: start;
+    justify-items: center;
+
+    justify-content: center;
+   
+
+    gap: 40px;
+    
+    
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 0 40px 0;
+    margin: 40px 0;
+   
+    
+}
+
+.interest-section-box{
+   /*  margin: 0 46px 0 0; */
+    background-color:  rgba(245, 229, 229, 0.507) ;
+    backdrop-filter: blur(18px); /* Efecto de desenfoque */
+    box-shadow: 7px 1px 14px 3px rgba(0,0,0,0.2);
+
+    border-radius: 18px;
+    
+}
+
+
+.interest-form__container{
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  /*  margin: 20px 0 0; */
+
+  grid-area: 1 / 1 / 3 / 2;
+
+}
+
+.interest-form__container > h1{
+    font-size: 2rem;
+}
+
+
+.interest-form{
+  
+    max-width: 400px;
+    min-width: 320px;
+    height: auto;
+   /*  margin: 12px 0 0; */
+    padding: 20px 0;
+    
+
+   
+
+   /*  background: linear-gradient(90deg, rgba(218,220,223,1) 0%, rgba(251,251,251,0.07886904761904767) 35%); */
+
+
+    
+    
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0 26px;
+    margin: 0 0 20px;
+    gap: 8px;
+}
+
+
+.interest-form div > label {
+    font-size: 1.6rem;
+} 
+
+
+.interest-form__input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: unset;
+    appearance: none;
+    padding: 0 10px;
+}
+
+/* 
+.interest-form div > input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: unset;
+    appearance: none;
+    padding: 0 10px;
+}
+
+.interest-form div > select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: unset;
+    appearance: none;
+    padding: 0 10px;
+    
+} */
+
+
+
+
+
+
+
+
+#type-coin__select{
+   /* width: 100%;
+   height: 40px; */
+   
+ /*   padding: 0 10px; */
+   
+   /* border-radius: 8px; */
+  /*  outline: unset;
+   appearance: none; */
+}
+
+
+
+.initialAmount-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#initialAmount-input-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency-icon-coin__span{
+    display: inline-block;
+    text-align: center;
+    width: 26px;
+    height: 30px;
+    font-size: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+   
+}
+
+
+.btn-container > button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+   
+}
+
+.btn-container > button:hover{
+    
+    background-color:  rgba(247, 214, 214, 0.918) ;
+    transition: all 0.4s;
+   
+}
+
+.outputs-container{
+
+    display: flex;
+    flex-direction: column;
+    padding:  26px 26px 0;
+    gap: 10px;
+    
+}
+
+.output{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* SECTION INFO */
+
+#info-compund-interest-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    min-width: 320px;
+    padding: 20px 0;
+    height: 360px;
+    
+
+}
+
+#info-compund-interest-card{
+    font-size: 1.4rem;
+    padding: 20px 40px;
+
+}
+
+
+#info-compund-interest-card  p{
+   
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+
+/* CONVERSOR DE UNIDADES */
+
+#unit-converter{
+   
+    max-width: 200px;
+    min-width: 320px;
+    padding: 20px;
+
+}
+
+
+#unit-converter form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+   /*  padding: 20px; */
+
+
+
+}
+
+
+
+#unit-converter input{
+    
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    outline: unset;
+    appearance: none;
+    padding: 0 15px 0;
+    text-align: center;
+    
+    
+
+}
+
+
+
+#unit-converter div{
+ /*   font-size: 1.3rem; */
+  /*  margin: 0 0 20px; */
+   
+}
+
+#unit-converter select{
+
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-top: 0.2px solid;
+    border-color: rgb(216, 199, 199);
+    border-radius: 0 0 8px 8px;
+    outline: unset;
+    appearance: none;
+    padding: 0 10px;
+    
+}
+ 
+
+
+
+#unit-converter-title-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin-top: 12px;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+   
+    
+}
+
+#unit-converter-title-card{
+
+  
+
+}
+
+
+
+#unit-converter-title-card p{
+
+    
+    /* margin-bottom: 20px; */
+    
+}
