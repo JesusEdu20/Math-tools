@@ -1,9 +1,9 @@
 
-import { calcCompoundInterest } from "./formula.js";
+import { calcCompoundInterest } from "./scripts/formula.js";
 
-import { setSymbolOfCoinOnInput } from "./inputs.js";
+import { setSymbolOfCoinOnInput } from "./scripts/inputs.js";
 
-import { convertTimeUnit } from "./coversorDeUnidades.js";
+import { convertTimeUnit } from "./scripts/converter.js";
 
 
 
