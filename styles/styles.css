@@ -19,7 +19,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/Untitled-7-06.webp);
+    background-image: url(../assets/Untitled-7-06.webp  );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@ main{
 
 .interest-section{
 
-    display: grid;    
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
    /*  grid-template-rows: 400px minmax(600px); */
     
@@ -45,7 +45,8 @@ main{
    
 
     height: auto;
-    padding:  40px  0;
+    padding:  40px;
+    
    /*  margin: 40px 0; */
    
     
