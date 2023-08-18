@@ -12,12 +12,17 @@ html{
 }
 
 body{
-    background-image: url(./Untitled-7-06.png);
+    background-image: url(./Untitled-7-06.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
 } 
+
+main{
+    display: flex;
+    justify-content: center;
+}
 
 /* #background-filter-blur{
     position: absolute;
@@ -48,6 +53,7 @@ body{
     
     
     width: 100%;
+    max-width: 1300px;
     min-width: 320px;
     height: auto;
     padding: 0 40px 0;
@@ -261,6 +267,14 @@ body{
 
 
 /* CONVERSOR DE UNIDADES */
+
+
+#converter-unit-of-time{ 
+    /* Container */
+
+   
+}
+
 
 #unit-converter{
    
