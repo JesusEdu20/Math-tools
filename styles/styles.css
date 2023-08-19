@@ -53,7 +53,7 @@ main{
 }
 
 @media (min-width:1500px) {
-    .interest-section{
+    main{
         height: 100vh;
     }
 }
