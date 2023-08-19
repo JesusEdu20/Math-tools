@@ -52,6 +52,12 @@ main{
     
 }
 
+@media (min-width:1500px) {
+    .interest-section{
+        height: 100vh;
+    }
+}
+
 .interest-section-box{
    /*  margin: 0 46px 0 0; */
     background-color:  rgba(245, 229, 229, 0.507) ;
